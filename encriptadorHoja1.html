@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div>
+            </div>
+        </header>
+
+        <main>
+            <div class="logorec">
+                <img class="logo" src="imagenes/logoa.png" >
+            </div>
+                <ul class="buttons">
+                <li>
+                    <textarea name="nonEncryptedtextZ" id="nonEncryptedZ" cols="70" rows="10" placeholder="Ingrese el texto a encriptar aquí..."></textarea>
+                </li>
+                <li>
+                    <input type="image" src="imagenes/button.png" class="botonEncriptar" onclick="encriptar()" >  
+                </li>
+                <li>
+                    <input type="image" src="imagenes/button2.png" class="botonDescriptar" onclick="desencriptar()">
+                </li>
+                <li>
+                    <img class="noMinusNIA" src="imagenes/nominusnia.png">
+                </li>
+                <li>
+                    
+                </li>
+                
+            </ul>
+            
+            <div class="noEncontrado">
+                <img id="muni" class="munieco" src="imagenes/Muñeco.png">
+                <h1 id="mensaje1"  class="ningunmensaje"><b>Ningún mensaje fue encontrado</b></h1>
+                <h2 id="Mensaje2" type="text" class="ningunmensaje">Ingresa el texto que desees encriptar o desencriptar.</h2>
+                <input type="image" style="visibility:hidden" src="imagenes/botonCopia.png" id="btn" onclick="copy('mensaje1')">
+            </div>
+            
+            <script>
+                function encriptar(){
+                    var replaceNonencrypt = document.getElementById("nonEncryptedZ").value;
+                    
+                    var replaceNonencrypte=replaceNonencrypt.replaceAll("e", "enter");
+                    var replaceNonencrypti=replaceNonencrypte.replaceAll("i", "imes");
+                    var replaceNonencrypto=replaceNonencrypti.replaceAll("o", "ober");
+                    var replaceNonencrypta=replaceNonencrypto.replaceAll("a", "ai");
+                    var replaceNonencryptu=replaceNonencrypta.replaceAll("u", "ufat");
+                    var quitarNoMensajeIn=document.getElementById("muni");
+                    quitarNoMensajeIn.remove();
+                    var quitarNoMensajeIn=document.getElementById("Mensaje2");
+                    quitarNoMensajeIn.remove();
+                    document.getElementById("mensaje1").textContent=replaceNonencryptu;
+                    var displayButton = document.getElementById("btn");
+                    displayButton.style="visible";
+                }
+                function desencriptar(){
+                    var cripty = document.getElementById("nonEncryptedZ").value;
+                    var replaceNonencrypt = cripty.replaceAll("ai", "a" );
+                    var replaceNonencrypte=replaceNonencrypt.replaceAll("enter", "e");
+                    var replaceNonencrypti=replaceNonencrypte.replaceAll("imes", "i");
+                    var replaceNonencrypto=replaceNonencrypti.replaceAll("ober", "o");
+                    var replaceNonencryptu=replaceNonencrypto.replaceAll("ufat", "u");
+                    var quitarNoMensajeIn=document.getElementById("muni");
+                    quitarNoMensajeIn.remove();
+                    var quitarNoMensajeIn=document.getElementById("Mensaje2");
+                    quitarNoMensajeIn.remove();
+                    document.getElementById("mensaje1").textContent=replaceNonencryptu;    
+                    var displayButton = document.getElementById("btn");
+                    displayButton.style="visible";
+                   
+                    
+                       
+                }
+                
+                function copy(ele){
+                    var aux = document.createElement("input");
+                    aux.setAttribute("value",document.getElementById(ele).innerHTML);
+                    document.body.appendChild(aux);
+                    aux.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(aux);
+                    alert(document.getElementById("mensaje1").textContent + " copiado")
+                }
+                
+                
+            </script>
+             
+        </main>
+
+        <footer>
+        </footer>
+    </body>
+</html>

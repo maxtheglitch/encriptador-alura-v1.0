@@ -1,0 +1,171 @@
+header {
+}
+
+#nonEncryptedZ{
+font-family: fantasy;
+position: absolute;
+font-size: 30px;
+width: 420px;
+height: 448px;
+left: 240px;
+right: 623;
+top: 160px;
+bottom: 808;
+}
+
+#nonEncryptedZ::placeholder{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: rgb(144, 196, 214);
+   font-size: 25px;
+   font-style: initial;
+}
+
+.logorec{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 120px;
+height: 48px;
+left: 40px;
+top: 40px;
+
+}
+.logo{
+
+ position: absolute;
+ left: 36.67%;
+ right: 37.43%;
+ top: 0%;
+ bottom: 0%;
+    
+}
+
+
+
+.botonEncriptar{
+    position:absolute;
+    top: 885px;
+    left: 240px;
+    bottom: 72px;
+    right: 972px;
+    
+    
+}
+
+.botonDescriptar{
+    position:absolute;
+    top: 885px;
+    left: 592px;
+    bottom: 72px;
+    
+}
+
+
+
+
+
+footer{
+
+}
+
+main{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    
+    /* Light blue/light-blue-100 */
+    
+    background: #F3F5FC;  
+}
+
+
+
+.noMinusNIA{
+    position: absolute;
+    top: 851px;
+    left: 240px;
+    bottom: 155px;
+    right: 971px;
+}
+
+.noEncontrado{
+    overflow: scroll;
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 32px;
+}
+
+.munieco{
+ position: relative;
+ top: 243px;
+ left: 32px;   
+ right: 32px;
+ bottom: 397px;
+}
+
+h1{
+    padding-top: 235px;
+    padding-left: 20px;
+    position:relative;
+    width: 369px;
+    height: 100px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+    
+    text-align: center;
+    
+    /* Gray/gray-500 */
+    
+    color: #343A40;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+h2{
+    position: static;
+    width: 336px;
+    height: 250px;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+
+    text-align:end;
+    color: #343A40;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#btn{
+    position: relative;
+    top: 486px;
+    left: 32px;   
+    right: 32px;
+    bottom: 32px;
+}
